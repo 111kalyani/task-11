@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans", sans-serif;
+}
+
+body {
+	background: #eeeff4;
+}
+
+.wrapper .header {
+	width: 100%;
+	height: 50px;
+	background: cornflowerblue;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 900;
+}
+
+.cards-wrap {
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cards-wrap .cards-item {
+	padding: 15px 25px;
+	width: 25%;
+}
+
+.cards-wrap .cards-inner {
+	background: white;
+	border-radius: 5px;
+	padding: 35px 20px;
+	min-width: 225px;
+	min-height: 315px;
+	max-height: 370px;
+	width: 100%;
+}
+.cards-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+img {
+	width: 110px;
+	height: 110px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	margin-bottom: 8px;
+	font-size: 25px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.date {
+	margin: 5px 0 10px;
+	font-size: 20px;
+}
+
+.seats {
+	margin: 5px 0 10px;
+	font-size: 20px;
+}
+
+.btn {
+	margin: 5px 0 10px;
+}
+
+.btn button {
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	background: black;
+	color: white;
+}
+
+button:hover {
+	background: white;
+	color: red;
+}
+
+@media screen and (max-width: 1024px) {
+	.cards-wrap .cards-item {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cards-wrap .cards-item {
+		width: 50%;
+	}
+
+	.wrapper .header {
+		font-size: 16px;
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.cards-wrap .cards-item {
+		width: 100%;
+	}
+
+	.wrapper .header {
+		font-size: 14px;
+	}
+}
